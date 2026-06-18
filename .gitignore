@@ -1,3 +1,5 @@
 01_baseline/models
 02_hypertuning/models
 03_kd_single/models
+04_kd_multi/models
+04_kd_multi/models/ce_resne50_effnetb3
