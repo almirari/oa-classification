@@ -1,0 +1,99 @@
+============================================================================
+  Multi-Teacher KD — CORAL  (ResNet-50-CORAL + EffNetB3-CORAL → MobileNetV3-Small)
+  Notebook : oa-multiteacher-coral.ipynb
+============================================================================
+
+  ── Seed 33  (training best val QWK: 0.8058) ──────────────────────────────
+  Head : CORAL
+
+  Metric              Value
+  --------------------------
+  QWK                0.8224
+  Accuracy           62.02%
+  MAE                0.4167
+  RMSE               0.7011
+  Macro P            0.6633
+  Macro R            0.6721
+  Macro F1           0.6596
+  Wtd P              0.6666
+  Wtd R              0.6202
+  Wtd F1             0.6347
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7731     0.6667     0.7160      639
+  Grade 1 (Doubtful)         0.2939     0.4696     0.3615      296
+  Grade 2 (Minimal)          0.7015     0.5257     0.6010      447
+  Grade 3 (Moderate)         0.7583     0.8161     0.7862      223
+  Grade 4 (Severe)           0.7895     0.8824     0.8333       51
+
+  ── Seed 81  (training best val QWK: 0.8090) ──────────────────────────────
+  Head : CORAL
+
+  Metric              Value
+  --------------------------
+  QWK                0.8142
+  Accuracy           63.10%
+  MAE                0.4215
+  RMSE               0.7273
+  Macro P            0.6484
+  Macro R            0.6458
+  Macro F1           0.6439
+  Wtd P              0.6433
+  Wtd R              0.6310
+  Wtd F1             0.6330
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7255     0.7778     0.7508      639
+  Grade 1 (Doubtful)         0.2901     0.3480     0.3164      296
+  Grade 2 (Minimal)          0.6806     0.5101     0.5831      447
+  Grade 3 (Moderate)         0.7719     0.7892     0.7805      223
+  Grade 4 (Severe)           0.7736     0.8039     0.7885       51
+
+  ── Seed 5  (training best val QWK: 0.8065) ───────────────────────────────
+  Head : CORAL
+
+  Metric              Value
+  --------------------------
+  QWK                0.8143
+  Accuracy           64.01%
+  MAE                0.4124
+  RMSE               0.7211
+  Macro P            0.6780
+  Macro R            0.6503
+  Macro F1           0.6564
+  Wtd P              0.6616
+  Wtd R              0.6401
+  Wtd F1             0.6415
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7386     0.8091     0.7722      639
+  Grade 1 (Doubtful)         0.3375     0.4595     0.3891      296
+  Grade 2 (Minimal)          0.6886     0.4452     0.5408      447
+  Grade 3 (Moderate)         0.7742     0.7534     0.7636      223
+  Grade 4 (Severe)           0.8511     0.7843     0.8163       51
+
+  ── AVERAGED ACROSS 3 SEEDS  (seeds: [33, 81, 5]) ─────────────────────────
+
+  Metric               Mean      ± Std        Min        Max
+  ------------------------------------------------------
+  QWK                0.8170     0.0038     0.8142     0.8224
+  Acc (%)           63.0435     0.8147    62.0169    64.0097
+  MAE                0.4169     0.0037     0.4124     0.4215
+  RMSE               0.7165     0.0112     0.7011     0.7273
+  Macro P            0.6632     0.0121     0.6484     0.6780
+  Macro R            0.6561     0.0115     0.6458     0.6721
+  Macro F1           0.6533     0.0068     0.6439     0.6596
+  Wtd P              0.6572     0.0100     0.6433     0.6666
+  Wtd R              0.6304     0.0081     0.6202     0.6401
+  Wtd F1             0.6364     0.0037     0.6330     0.6415
+
+  Class                         Precision           Recall         F1-Score
+  ------------------------------------------------------------------------
+  Grade 0 (Normal)       0.7458 ± 0.0201   0.7512 ± 0.0611   0.7463 ± 0.0232
+  Grade 1 (Doubtful)     0.3072 ± 0.0215   0.4257 ± 0.0551   0.3557 ± 0.0300
+  Grade 2 (Minimal)      0.6902 ± 0.0086   0.4937 ± 0.0349   0.5750 ± 0.0253
+  Grade 3 (Moderate)     0.7682 ± 0.0070   0.7862 ± 0.0257   0.7768 ± 0.0096
+  Grade 4 (Severe)       0.8047 ± 0.0334   0.8235 ± 0.0424   0.8127 ± 0.0185

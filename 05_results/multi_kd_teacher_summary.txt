@@ -1,0 +1,189 @@
+==========================================================================================
+  TEACHER SUMMARY — 04_kd_multi
+==========================================================================================
+
+  ── teacher_ce_resnet50  (ResNet-50-CE) ───────────────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8193
+  Accuracy           63.47%
+  MAE                0.4070
+  RMSE               0.7002
+  Macro P            0.7033
+  Macro R            0.6590
+  Macro F1           0.6714
+  Wtd P              0.6824
+  Wtd R              0.6347
+  Wtd F1             0.6483
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7601     0.7387     0.7492      639
+  Grade 1 (Doubtful)         0.3067     0.4932     0.3782      296
+  Grade 2 (Minimal)          0.7327     0.4966     0.5920      447
+  Grade 3 (Moderate)         0.8057     0.7623     0.7834      223
+  Grade 4 (Severe)           0.9111     0.8039     0.8542       51
+
+  ── teacher_ce_effnetb3  (EfficientNetB3-CE) ──────────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8226
+  Accuracy           64.19%
+  MAE                0.3992
+  RMSE               0.6937
+  Macro P            0.7045
+  Macro R            0.6800
+  Macro F1           0.6796
+  Wtd P              0.6989
+  Wtd R              0.6419
+  Wtd F1             0.6564
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.8000     0.7011     0.7473      639
+  Grade 1 (Doubtful)         0.3282     0.5709     0.4168      296
+  Grade 2 (Minimal)          0.7374     0.4899     0.5887      447
+  Grade 3 (Moderate)         0.7848     0.8341     0.8087      223
+  Grade 4 (Severe)           0.8723     0.8039     0.8367       51
+
+  ── teacher_coral_resnet50  (ResNet-50-CORAL) ─────────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8445
+  Accuracy           66.79%
+  MAE                0.3665
+  RMSE               0.6608
+  Macro P            0.7006
+  Macro R            0.6728
+  Macro F1           0.6790
+  Wtd P              0.6923
+  Wtd R              0.6679
+  Wtd F1             0.6717
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7701     0.8075     0.7884      639
+  Grade 1 (Doubtful)         0.3534     0.4764     0.4058      296
+  Grade 2 (Minimal)          0.7483     0.5056     0.6035      447
+  Grade 3 (Moderate)         0.7676     0.8296     0.7974      223
+  Grade 4 (Severe)           0.8636     0.7451     0.8000       51
+
+  ── teacher_coral_effnetb3  (EfficientNetB3-CORAL) ────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8512
+  Accuracy           68.18%
+  MAE                0.3533
+  RMSE               0.6515
+  Macro P            0.6999
+  Macro R            0.6807
+  Macro F1           0.6867
+  Wtd P              0.6863
+  Wtd R              0.6818
+  Wtd F1             0.6796
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7623     0.8482     0.8030      639
+  Grade 1 (Doubtful)         0.3662     0.4020     0.3833      296
+  Grade 2 (Minimal)          0.7227     0.5481     0.6234      447
+  Grade 3 (Moderate)         0.7787     0.8206     0.7991      223
+  Grade 4 (Severe)           0.8696     0.7843     0.8247       51
+
+  ── teacher_hybrid_resnet50effnetb3_resnet50_ce  (ResNet-50-CE) ───────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8323
+  Accuracy           64.67%
+  MAE                0.3943
+  RMSE               0.6920
+  Macro P            0.6840
+  Macro R            0.6880
+  Macro F1           0.6761
+  Wtd P              0.6810
+  Wtd R              0.6467
+  Wtd F1             0.6528
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7642     0.7355     0.7496      639
+  Grade 1 (Doubtful)         0.3341     0.4730     0.3916      296
+  Grade 2 (Minimal)          0.7637     0.4989     0.6035      447
+  Grade 3 (Moderate)         0.6953     0.8700     0.7729      223
+  Grade 4 (Severe)           0.8627     0.8627     0.8627       51
+
+  ── teacher_hybrid_resnet50effnetb3_effnetb3_coral  (EfficientNetB3-CORAL) ────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8441
+  Accuracy           68.24%
+  MAE                0.3593
+  RMSE               0.6653
+  Macro P            0.7073
+  Macro R            0.6919
+  Macro F1           0.6982
+  Wtd P              0.6787
+  Wtd R              0.6824
+  Wtd F1             0.6787
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7455     0.8388     0.7894      639
+  Grade 1 (Doubtful)         0.3393     0.3209     0.3299      296
+  Grade 2 (Minimal)          0.6946     0.6309     0.6612      447
+  Grade 3 (Moderate)         0.8550     0.7668     0.8085      223
+  Grade 4 (Severe)           0.9020     0.9020     0.9020       51
+
+  ── teacher_hybrid_resnet50resnet50_ce  (ResNet-50-CE) ────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8207
+  Accuracy           64.67%
+  MAE                0.4088
+  RMSE               0.7252
+  Macro P            0.6586
+  Macro R            0.6716
+  Macro F1           0.6595
+  Wtd P              0.6512
+  Wtd R              0.6467
+  Wtd F1             0.6437
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7496     0.7684     0.7589      639
+  Grade 1 (Doubtful)         0.3248     0.3412     0.3328      296
+  Grade 2 (Minimal)          0.6959     0.5324     0.6033      447
+  Grade 3 (Moderate)         0.6656     0.8924     0.7625      223
+  Grade 4 (Severe)           0.8571     0.8235     0.8400       51
+
+  ── teacher_hybrid_resnet50resnet50_coral  (ResNet-50-CORAL) ──────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8323
+  Accuracy           64.31%
+  MAE                0.3949
+  RMSE               0.6872
+  Macro P            0.6765
+  Macro R            0.6709
+  Macro F1           0.6685
+  Wtd P              0.6672
+  Wtd R              0.6431
+  Wtd F1             0.6499
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7748     0.7324     0.7530      639
+  Grade 1 (Doubtful)         0.3199     0.4291     0.3665      296
+  Grade 2 (Minimal)          0.6919     0.5324     0.6018      447
+  Grade 3 (Moderate)         0.7235     0.8565     0.7844      223
+  Grade 4 (Severe)           0.8723     0.8039     0.8367       51
+
+==========================================================================================

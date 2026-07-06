@@ -1,0 +1,27 @@
+============================================================================
+  Teacher — ResNet-50-CE  (CE)
+  Notebook   : mkd_ce_resnet50_efficientnetb3.ipynb
+  Checkpoint : kd_teacher_resnet50.pth
+============================================================================
+  Architecture : ResNet-50  |  Head : CE
+
+  Metric              Value
+  --------------------------
+  QWK                0.8193
+  Accuracy           63.47%
+  MAE                0.4070
+  RMSE               0.7002
+  Macro P            0.7033
+  Macro R            0.6590
+  Macro F1           0.6714
+  Wtd P              0.6824
+  Wtd R              0.6347
+  Wtd F1             0.6483
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7601     0.7387     0.7492      639
+  Grade 1 (Doubtful)         0.3067     0.4932     0.3782      296
+  Grade 2 (Minimal)          0.7327     0.4966     0.5920      447
+  Grade 3 (Moderate)         0.8057     0.7623     0.7834      223
+  Grade 4 (Severe)           0.9111     0.8039     0.8542       51

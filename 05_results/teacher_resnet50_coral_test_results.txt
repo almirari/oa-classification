@@ -1,0 +1,27 @@
+============================================================================
+  Teacher — ResNet-50-CORAL
+  Notebook : kd_coral_resnet50_mobilenetv3-small.ipynb
+  Checkpoint : teacher_resnet50_coral.pth
+============================================================================
+  Architecture : ResNet-50  |  Head : CORAL
+
+  Metric              Value
+  --------------------------
+  QWK                0.8481
+  Accuracy           66.79%
+  MAE                0.3641
+  RMSE               0.6543
+  Macro P            0.6973
+  Macro R            0.6923
+  Macro F1           0.6923
+  Wtd P              0.6846
+  Wtd R              0.6679
+  Wtd F1             0.6733
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  Grade 0 (Normal)           0.7766     0.7778     0.7772      639
+  Grade 1 (Doubtful)         0.3207     0.3986     0.3554      296
+  Grade 2 (Minimal)          0.7194     0.5794     0.6419      447
+  Grade 3 (Moderate)         0.7899     0.8430     0.8156      223
+  Grade 4 (Severe)           0.8800     0.8627     0.8713       51
